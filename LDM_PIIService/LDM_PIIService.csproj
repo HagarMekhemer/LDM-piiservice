@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-LDM_PIIService-871bd1f5-60c0-4fda-965b-d0df4c74869e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.12.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="ServiceStack.Text" Version="6.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LDM_PIIService.DAL\LDM_PIIService.DAL.csproj" />
+    <ProjectReference Include="..\LDM_PIIService.DSL\LDM_PIIService.DSL.csproj" />
+    <ProjectReference Include="..\LDM_PIIService.Entities\LDM_PIIService.Entities.csproj" />
+    <ProjectReference Include="..\LDM_PIIService.Helpers\LDM_PIIService.Helpers.csproj" />
+  </ItemGroup>
+</Project>

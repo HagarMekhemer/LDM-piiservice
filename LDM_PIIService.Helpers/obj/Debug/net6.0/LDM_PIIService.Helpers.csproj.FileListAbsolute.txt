@@ -1,0 +1,12 @@
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\bin\Debug\net6.0\LDM_PIIService.Helpers.deps.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\bin\Debug\net6.0\LDM_PIIService.Helpers.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\bin\Debug\net6.0\LDM_PIIService.Helpers.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.csproj.AssemblyReference.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.AssemblyInfoInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.AssemblyInfo.cs
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.csproj.CoreCompileInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\refint\LDM_PIIService.Helpers.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\ref\LDM_PIIService.Helpers.dll
