@@ -8,6 +8,6 @@ namespace LDM_PIIService
 {
     public class TimeLogger
     {
-        public int IntervalMilliseconds { get; set; }
+        public int IntervalInMinutes { get; set; }
     }
 }

@@ -10,3 +10,4 @@ D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PII
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\refint\LDM_PIIService.Helpers.dll
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.pdb
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\ref\LDM_PIIService.Helpers.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.sourcelink.json

@@ -1,0 +1,12 @@
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.DSL.deps.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.DSL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.DSL.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.GeneratedMSBuildEditorConfig.editorconfig
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.AssemblyInfoInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.AssemblyInfo.cs
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.csproj.CoreCompileInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.sourcelink.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\refint\LDM_PIIService.DSL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\ref\LDM_PIIService.DSL.dll

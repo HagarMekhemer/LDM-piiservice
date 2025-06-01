@@ -6,13 +6,15 @@ namespace LDM_PIIService
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-        private readonly int _intervalMilliseconds;
+        private readonly int _intervalInMinutes;
         private readonly FileLogger _fileLogger;
 
-        public Worker(ILogger<Worker> logger , IOptions<TimeLogger> settings)
+        public Worker(ILogger<Worker> logger , ConfigManager configManager)
         {
             _logger = logger;
-            _intervalMilliseconds = settings.Value.IntervalMilliseconds;
+            _intervalInMinutes = configManager.IntervalInMinutes;
+            FileLogger.GetLogFilePath_Event += () => configManager.LogPath;
+            _fileLogger = FileLogger.GetInstance("Worker");
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -22,15 +24,16 @@ namespace LDM_PIIService
                 try
                 {
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                    //
+                    _fileLogger.WriteToLogFile(ActionTypeEnum.Information, $"Worker executed at {DateTime.Now}");
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, "Processing failed");
+                    _fileLogger.WriteToLogFile(ex, "Unhandled exception in Worker loop");
                 }
                 finally
                 {
-                    await Task.Delay(_intervalMilliseconds, stoppingToken);
+                    await Task.Delay(TimeSpan.FromMinutes(_intervalInMinutes), stoppingToken);
                 }
             }
         }

@@ -19,7 +19,7 @@ namespace LDM_PIIService.Helpers
             ClientSecret = GetKey<string>("AuthSettings:ClientSecret");
             AuthUrl = GetKey<string>("AuthSettings:AuthUrl");
             PdfServiceUrl = GetKey<string>("PdfService:Url");
-            IntervalMilliseconds = GetKey<int>("WorkerSettings:IntervalMilliseconds");
+            IntervalInMinutes = GetKey<int>("TimeLogger:IntervalInMinutes");
         }
 
         public string LogPath { get; }
@@ -27,7 +27,7 @@ namespace LDM_PIIService.Helpers
         public string ClientSecret { get; }
         public string AuthUrl { get; }
         public string PdfServiceUrl { get; }
-        public int IntervalMilliseconds { get; }
+        public int IntervalInMinutes { get; }
 
 
         //will be updated later>after connection with db

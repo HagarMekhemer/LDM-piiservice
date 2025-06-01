@@ -1,0 +1,12 @@
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\bin\Debug\net6.0\LDM_PIIService.Entities.deps.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\bin\Debug\net6.0\LDM_PIIService.Entities.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\bin\Debug\net6.0\LDM_PIIService.Entities.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.AssemblyInfoInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.AssemblyInfo.cs
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.csproj.CoreCompileInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.sourcelink.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\refint\LDM_PIIService.Entities.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\LDM_PIIService.Entities.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Entities\obj\Debug\net6.0\ref\LDM_PIIService.Entities.dll

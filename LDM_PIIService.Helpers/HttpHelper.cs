@@ -25,8 +25,14 @@ namespace LDM_PIIService.Helpers
 
         private static readonly FileLogger _logger = FileLogger.GetInstance("HttpHelper");
 
-        public static async Task<T> PostJsonAsync<T>(string url, object data, string bearerToken = null)
+        public static async Task<T> PostJsonAsync<T>(string url, object data, string bearerToken)
         {
+
+            if (string.IsNullOrWhiteSpace(bearerToken))
+            {
+                throw new ArgumentException("Bearer token is required.", nameof(bearerToken));
+            }
+
             var json = JsonSerializer.Serialize(data, _defaultJsonOptions);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -35,11 +41,8 @@ namespace LDM_PIIService.Helpers
                 Content = content
             };
 
-            if (!string.IsNullOrWhiteSpace(bearerToken))
-            {
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
-            }
-
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+            
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Sending POST (JSON) to {url}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Request Body: {json}");
 

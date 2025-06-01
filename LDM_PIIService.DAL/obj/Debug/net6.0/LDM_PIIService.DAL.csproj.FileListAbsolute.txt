@@ -1,0 +1,12 @@
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\bin\Debug\net6.0\LDM_PIIService.DAL.deps.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\bin\Debug\net6.0\LDM_PIIService.DAL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\bin\Debug\net6.0\LDM_PIIService.DAL.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.AssemblyInfoInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.AssemblyInfo.cs
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.csproj.CoreCompileInputs.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.sourcelink.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\refint\LDM_PIIService.DAL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\ref\LDM_PIIService.DAL.dll
