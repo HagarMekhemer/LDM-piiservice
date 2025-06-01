@@ -10,3 +10,7 @@ D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIServ
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\refint\LDM_PIIService.DSL.dll
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.pdb
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\ref\LDM_PIIService.DSL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.Helpers.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.Helpers.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.csproj.AssemblyReference.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIS.FD81EDF6.Up2Date
