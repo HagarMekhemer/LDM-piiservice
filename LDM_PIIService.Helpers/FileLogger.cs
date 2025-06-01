@@ -21,9 +21,6 @@ namespace LDM_PIIService.Helpers
 
         public static FileLogger GetInstance(string? subFolderLogName = null)
         {
-            if (string.IsNullOrWhiteSpace(subFolderLogName))
-                subFolderLogName = "General";
-
             lock (_loggerDictionary)
             {
                 if (!_loggerDictionary.TryGetValue(subFolderLogName.ToLower(), out var logger))
@@ -113,6 +110,8 @@ namespace LDM_PIIService.Helpers
     {
         Information = 1,
         Action = 2,
-        Exception = 3
+        Exception = 3,
+        Error = 4
+
     }
 }

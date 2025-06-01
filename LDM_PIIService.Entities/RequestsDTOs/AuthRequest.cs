@@ -12,11 +12,11 @@ namespace LDM_PIIService.Entities.RequestsDTOs
     {
         [Required(ErrorMessage = "The GrantType field is required.")]
         [JsonPropertyName("grant_type")]
-        public string GrantType { get; set; } = "client_credentials";
+        public string GrantType { get; set; }
 
         [Required(ErrorMessage = "The ClientAuthenticationMethod field is required.")]
         [JsonPropertyName("client_authentication_method")]
-        public string ClientAuthenticationMethod { get; set; } = "client_secret_post";
+        public string ClientAuthenticationMethod { get; set; }
 
         [Required(ErrorMessage = "The ClientSecret field is required.")]
         [JsonPropertyName("client_secret")]
@@ -27,4 +27,4 @@ namespace LDM_PIIService.Entities.RequestsDTOs
         public string ClientId { get; set; }
     }
 }
-
+}

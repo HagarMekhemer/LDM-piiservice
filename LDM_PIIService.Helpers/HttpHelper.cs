@@ -42,7 +42,7 @@ namespace LDM_PIIService.Helpers
             };
 
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
-            
+
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Sending POST (JSON) to {url}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Request Body: {json}");
 
@@ -52,8 +52,15 @@ namespace LDM_PIIService.Helpers
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Status: {response.StatusCode}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Body: {responseContent}");
 
-            response.EnsureSuccessStatusCode();
-            return JsonSerializer.Deserialize<T>(responseContent, _defaultJsonOptions);
+            if ((int)response.StatusCode >= 200 && (int)response.StatusCode <= 399)
+            {
+                return JsonSerializer.Deserialize<T>(responseContent, _defaultJsonOptions);
+            }
+            else
+            {
+                _logger.WriteToLogFile(ActionTypeEnum.Error, $"Request to {url} failed with status code {response.StatusCode}. Response: {responseContent}");
+                throw new HttpRequestException($"Request failed with status code {response.StatusCode}");
+            }
         }
 
         public static async Task<T> PostFormAsync<T>(string url, Dictionary<string, string> formData)
@@ -69,8 +76,16 @@ namespace LDM_PIIService.Helpers
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Status: {response.StatusCode}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Body: {responseContent}");
 
-            response.EnsureSuccessStatusCode();
-            return JsonSerializer.Deserialize<T>(responseContent, _defaultJsonOptions);
+            if ((int)response.StatusCode >= 200 && (int)response.StatusCode <= 399)
+            {
+                return JsonSerializer.Deserialize<T>(responseContent, _defaultJsonOptions);
+            }
+            else
+            {
+                _logger.WriteToLogFile(ActionTypeEnum.Error, $"Request to {url} failed with status code {response.StatusCode}. Response: {responseContent}");
+                throw new HttpRequestException($"Request failed with status code {response.StatusCode}");
+            }
+
         }
     }
 }

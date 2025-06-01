@@ -13,7 +13,6 @@ namespace LDM_PIIService
         {
             _logger = logger;
             _intervalInMinutes = configManager.IntervalInMinutes;
-            FileLogger.GetLogFilePath_Event += () => configManager.LogPath;
             _fileLogger = FileLogger.GetInstance("Worker");
         }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LDM_PIIService.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd09e2626f9141249555af13dba55f91f5f66b1d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e85dea118ae96d3373d83edb661eecad006eb42")]
 [assembly: System.Reflection.AssemblyProductAttribute("LDM_PIIService.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LDM_PIIService.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
