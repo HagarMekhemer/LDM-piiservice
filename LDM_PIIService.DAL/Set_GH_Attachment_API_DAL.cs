@@ -29,7 +29,7 @@ namespace LDM_PIIService.DAL
                 Value = status
             });
 
-            int result = await oracleManager.ExcuteNonQueryAsync("set_GH_ATTACHMENT_API", CommandType.StoredProcedure);
+            int result = await oracleManager.ExcuteNonQueryAsync("Set_GH_Attachment_API", CommandType.StoredProcedure);
             return result;
         }
     }
