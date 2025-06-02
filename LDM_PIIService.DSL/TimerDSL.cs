@@ -77,7 +77,7 @@ namespace LDM_PIIService.DSL
         {
             _logger.WriteToLogFile(ActionTypeEnum.Information, "Processing attachment timer task...");
 
-            var request = _getDsl.GetAttachment();
+            var request = await _getDsl.GetAttachmentAsync();
             if (request == null || string.IsNullOrWhiteSpace(request.Pdf))
             {
                 _logger.WriteToLogFile(ActionTypeEnum.Warning, "No valid attachment request returned.");

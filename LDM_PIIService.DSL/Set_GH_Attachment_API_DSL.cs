@@ -38,7 +38,7 @@ namespace LDM_PIIService.DSL
                 using var oracleManager = new OracleManager(_configManager.ConnectionString);
                 oracleManager.OpenConnectionAsync();
 
-                _getDal.ExecuteGetAttachment(oracleManager, out string jsonResult, out long seqNum);
+                var (jsonResult, seqNum) = await _getDal.ExecuteGetAttachmentAsync(oracleManager);
 
                 _logger.WriteToLogFile(ActionTypeEnum.Information, $"Got seqNum: {seqNum} from Get_GH_Attachment_API");
 

@@ -1,14 +1,8 @@
 ﻿using LDM_PIIService.DAL;
-using LDM_PIIService.Entities;
 using LDM_PIIService.Entities.RequestsDTOs;
-using LDM_PIIService.Entities.ResponsesDTOs;
 using LDM_PIIService.Helpers;
-using NT.Integration.SharedKernel.Helper;
 using NT.Integration.SharedKernel.OracleManagedHelper;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -27,19 +21,18 @@ namespace LDM_PIIService.DSL
             _logger = FileLogger.GetInstance("Get_GH_Attachment_API_DSL");
         }
 
-        public PdfUpdateRequest GetAttachment()
+        public async Task<PdfUpdateRequest> GetAttachmentAsync()
         {
             _logger.WriteToLogFile(ActionTypeEnum.Information, "Start Get_GH_Attachment_API.");
 
             try
             {
                 using var oracleManager = new OracleManager(_configManager.ConnectionString);
-                oracleManager.OpenConnectionAsync();
+                await oracleManager.OpenConnectionAsync();
 
-                _dal.ExecuteGetAttachment(oracleManager, out string jsonResult, out long seqNum);
+                var (jsonResult, seqNum) = await _dal.ExecuteGetAttachmentAsync(oracleManager);
 
                 _logger.WriteToLogFile(ActionTypeEnum.Information, $"Got seqNum: {seqNum}");
-
                 _logger.WriteToLogFile(ActionTypeEnum.Information, $"JSON result: {jsonResult}");
 
                 if (string.IsNullOrWhiteSpace(jsonResult))
@@ -62,5 +55,3 @@ namespace LDM_PIIService.DSL
         }
     }
 }
-
-
