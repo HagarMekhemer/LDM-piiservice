@@ -13,7 +13,15 @@ namespace LDM_PIIService.Helpers
 {
     public static class HttpHelper
     {
-        private static readonly HttpClient _client = new HttpClient();
+        private static readonly HttpClient _client = new HttpClient(new SocketsHttpHandler
+        {
+            UseCookies = false,
+            ConnectTimeout = TimeSpan.FromMinutes(5),
+            PooledConnectionLifetime = TimeSpan.FromMinutes(5),
+        })
+        {
+            Timeout = TimeSpan.FromMinutes(5)
+        };
 
         private static readonly JsonSerializerOptions _defaultJsonOptions = new JsonSerializerOptions
         {
