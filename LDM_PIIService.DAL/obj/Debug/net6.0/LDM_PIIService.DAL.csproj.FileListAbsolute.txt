@@ -10,3 +10,7 @@ D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIServ
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\refint\LDM_PIIService.DAL.dll
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.pdb
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\ref\LDM_PIIService.DAL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\bin\Debug\net6.0\NT.Integration.SharedKernel.OracleManagedHelper.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIService.DAL.csproj.AssemblyReference.cache
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DAL\obj\Debug\net6.0\LDM_PIIS.FD823564.Up2Date

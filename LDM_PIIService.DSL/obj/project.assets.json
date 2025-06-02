@@ -69,6 +69,26 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "LDM_PIIService.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LDM_PIIService.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LDM_PIIService.DAL.dll": {}
+        }
+      },
+      "LDM_PIIService.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LDM_PIIService.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LDM_PIIService.Entities.dll": {}
+        }
+      },
       "LDM_PIIService.Helpers/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -207,6 +227,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "LDM_PIIService.DAL/1.0.0": {
+      "type": "project",
+      "path": "../LDM_PIIService.DAL/LDM_PIIService.DAL.csproj",
+      "msbuildProject": "../LDM_PIIService.DAL/LDM_PIIService.DAL.csproj"
+    },
+    "LDM_PIIService.Entities/1.0.0": {
+      "type": "project",
+      "path": "../LDM_PIIService.Entities/LDM_PIIService.Entities.csproj",
+      "msbuildProject": "../LDM_PIIService.Entities/LDM_PIIService.Entities.csproj"
+    },
     "LDM_PIIService.Helpers/1.0.0": {
       "type": "project",
       "path": "../LDM_PIIService.Helpers/LDM_PIIService.Helpers.csproj",
@@ -215,6 +245,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "LDM_PIIService.DAL >= 1.0.0",
+      "LDM_PIIService.Entities >= 1.0.0",
       "LDM_PIIService.Helpers >= 1.0.0"
     ]
   },
@@ -250,6 +282,12 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\NTECH_Projects\\LDM_PIIService\\LDM_PIIService.DAL\\LDM_PIIService.DAL.csproj": {
+              "projectPath": "D:\\NTECH_Projects\\LDM_PIIService\\LDM_PIIService.DAL\\LDM_PIIService.DAL.csproj"
+            },
+            "D:\\NTECH_Projects\\LDM_PIIService\\LDM_PIIService.Entities\\LDM_PIIService.Entities.csproj": {
+              "projectPath": "D:\\NTECH_Projects\\LDM_PIIService\\LDM_PIIService.Entities\\LDM_PIIService.Entities.csproj"
+            },
             "D:\\NTECH_Projects\\LDM_PIIService\\LDM_PIIService.Helpers\\LDM_PIIService.Helpers.csproj": {
               "projectPath": "D:\\NTECH_Projects\\LDM_PIIService\\LDM_PIIService.Helpers\\LDM_PIIService.Helpers.csproj"
             }

@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="NT.Integration.Shield">
+      <HintPath>..\..\..\NTECH_Libraries\Shalaby labs collect DLLs\NT.Integration.Shield.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

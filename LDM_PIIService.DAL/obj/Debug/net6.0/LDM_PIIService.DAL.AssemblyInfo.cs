@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LDM_PIIService.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a2462127639f7fc28900119c6d8447647ad8988")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58b1fb0f8b0ddbcdb8ae0a0e4d6a43d1c7b7f627")]
 [assembly: System.Reflection.AssemblyProductAttribute("LDM_PIIService.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LDM_PIIService.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

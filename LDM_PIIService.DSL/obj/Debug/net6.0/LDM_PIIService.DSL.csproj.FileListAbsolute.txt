@@ -14,3 +14,11 @@ D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIServ
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.Helpers.pdb
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIService.DSL.csproj.AssemblyReference.cache
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\obj\Debug\net6.0\LDM_PIIS.FD81EDF6.Up2Date
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.DAL.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.Entities.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\NT.Integration.SharedKernel.Helper.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\NT.Integration.SharedKernel.OracleManagedHelper.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\Oracle.ManagedDataAccess.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\NT.Integration.Shield.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.DAL.pdb
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.DSL\bin\Debug\net6.0\LDM_PIIService.Entities.pdb

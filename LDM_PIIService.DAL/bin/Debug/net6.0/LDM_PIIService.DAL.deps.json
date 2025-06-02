@@ -7,8 +7,28 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "LDM_PIIService.DAL/1.0.0": {
+        "dependencies": {
+          "NT.Integration.SharedKernel.OracleManagedHelper": "2.0.0.0",
+          "Oracle.ManagedDataAccess": "2.0.19.1"
+        },
         "runtime": {
           "LDM_PIIService.DAL.dll": {}
+        }
+      },
+      "NT.Integration.SharedKernel.OracleManagedHelper/2.0.0.0": {
+        "runtime": {
+          "NT.Integration.SharedKernel.OracleManagedHelper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Oracle.ManagedDataAccess/2.0.19.1": {
+        "runtime": {
+          "Oracle.ManagedDataAccess.dll": {
+            "assemblyVersion": "2.0.19.1",
+            "fileVersion": "2.0.19.1"
+          }
         }
       }
     }
@@ -16,6 +36,16 @@
   "libraries": {
     "LDM_PIIService.DAL/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NT.Integration.SharedKernel.OracleManagedHelper/2.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Oracle.ManagedDataAccess/2.0.19.1": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -1,3 +1,4 @@
+using LDM_PIIService.DSL;
 using LDM_PIIService.Helpers;
 using Microsoft.Extensions.Options;
 
@@ -5,36 +6,18 @@ namespace LDM_PIIService
 {
     public class Worker : BackgroundService
     {
-        private readonly ILogger<Worker> _logger;
-        private readonly int _intervalInMinutes;
-        private readonly FileLogger _fileLogger;
+        private readonly TimersDSL _timersDSL;
 
-        public Worker(ILogger<Worker> logger , ConfigManager configManager)
+        public Worker(TimersDSL timersDSL, ConfigManager _config)
         {
-            _logger = logger;
-            _intervalInMinutes = configManager.IntervalInMinutes;
-            _fileLogger = FileLogger.GetInstance("Worker");
+            FileLogger.GetLogFilePath_Event += () => _config.LogPath;
+            _timersDSL = timersDSL;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!stoppingToken.IsCancellationRequested)
-            {
-                try
-                {
-                    _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                    _fileLogger.WriteToLogFile(ActionTypeEnum.Information, $"Worker executed at {DateTime.Now}");
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, "Processing failed");
-                    _fileLogger.WriteToLogFile(ex, "Unhandled exception in Worker loop");
-                }
-                finally
-                {
-                    await Task.Delay(TimeSpan.FromMinutes(_intervalInMinutes), stoppingToken);
-                }
-            }
+            _timersDSL.Start(stoppingToken);
         }
     }
 }
+        

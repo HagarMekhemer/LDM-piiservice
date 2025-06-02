@@ -25,13 +25,10 @@ namespace LDM_PIIService.Helpers
 
         private static readonly FileLogger _logger = FileLogger.GetInstance("HttpHelper");
 
-        public static async Task<T> PostJsonAsync<T>(string url, object data, string bearerToken)
+        public static T PostJson<T>(string url, object data, string bearerToken)
         {
-
             if (string.IsNullOrWhiteSpace(bearerToken))
-            {
                 throw new ArgumentException("Bearer token is required.", nameof(bearerToken));
-            }
 
             var json = JsonSerializer.Serialize(data, _defaultJsonOptions);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -46,8 +43,8 @@ namespace LDM_PIIService.Helpers
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Sending POST (JSON) to {url}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Request Body: {json}");
 
-            var response = await _client.SendAsync(request);
-            var responseContent = await response.Content.ReadAsStringAsync();
+            var response = _client.SendAsync(request).GetAwaiter().GetResult();
+            var responseContent = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Status: {response.StatusCode}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Body: {responseContent}");
@@ -63,15 +60,15 @@ namespace LDM_PIIService.Helpers
             }
         }
 
-        public static async Task<T> PostFormAsync<T>(string url, Dictionary<string, string> formData)
+        public static T PostForm<T>(string url, Dictionary<string, string> formData)
         {
             var content = new FormUrlEncodedContent(formData);
 
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Sending POST (Form) to {url}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Form Data: {string.Join(", ", formData.Select(kv => $"{kv.Key}={kv.Value}"))}");
 
-            var response = await _client.PostAsync(url, content);
-            var responseContent = await response.Content.ReadAsStringAsync();
+            var response = _client.PostAsync(url, content).GetAwaiter().GetResult();
+            var responseContent = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Status: {response.StatusCode}");
             _logger.WriteToLogFile(ActionTypeEnum.Information, $"Response Body: {responseContent}");
@@ -85,7 +82,6 @@ namespace LDM_PIIService.Helpers
                 _logger.WriteToLogFile(ActionTypeEnum.Error, $"Request to {url} failed with status code {response.StatusCode}. Response: {responseContent}");
                 throw new HttpRequestException($"Request failed with status code {response.StatusCode}");
             }
-
         }
     }
 }

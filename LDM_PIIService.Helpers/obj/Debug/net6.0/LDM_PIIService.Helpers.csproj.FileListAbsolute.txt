@@ -11,3 +11,5 @@ D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\refint\
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.pdb
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\ref\LDM_PIIService.Helpers.dll
 D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIService.Helpers.sourcelink.json
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\bin\Debug\net6.0\NT.Integration.Shield.dll
+D:\NTECH_Projects\LDM_PIIService\LDM_PIIService.Helpers\obj\Debug\net6.0\LDM_PIIS.05578830.Up2Date

@@ -111,7 +111,7 @@ namespace LDM_PIIService.Helpers
         Information = 1,
         Action = 2,
         Exception = 3,
-        Error = 4
-
+        Error = 4,
+        Warning=5
     }
 }

@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LDM_PIIService.DAL\LDM_PIIService.DAL.csproj" />
+    <ProjectReference Include="..\LDM_PIIService.Entities\LDM_PIIService.Entities.csproj" />
     <ProjectReference Include="..\LDM_PIIService.Helpers\LDM_PIIService.Helpers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NT.Integration.SharedKernel.Helper">
+      <HintPath>..\..\..\NTECH_Libraries\Shalaby labs collect DLLs\NT.Integration.SharedKernel.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="NT.Integration.SharedKernel.OracleManagedHelper">
+      <HintPath>..\..\..\NTECH_Libraries\Shalaby labs collect DLLs\NT.Integration.SharedKernel.OracleManagedHelper.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
