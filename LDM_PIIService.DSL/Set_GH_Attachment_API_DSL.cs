@@ -36,7 +36,7 @@ namespace LDM_PIIService.DSL
             try
             {
                 using var oracleManager = new OracleManager(_configManager.ConnectionString);
-                oracleManager.OpenConnectionAsync();
+                await oracleManager.OpenConnectionAsync();
 
                 var (jsonResult, seqNum) = await _getDal.ExecuteGetAttachmentAsync(oracleManager);
 

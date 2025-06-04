@@ -41,8 +41,7 @@ namespace LDM_PIIService.DSL
                     return null;
                 }
 
-                var pdfRequestDto = JsonSerializer.Deserialize<PdfUpdateRequest>(jsonResult);
-
+                var pdfRequestDto = JsonSerializer.Deserialize<PdfUpdateRequest>(jsonResult)
                 oracleManager.CloseConnection();
 
                 return pdfRequestDto;
